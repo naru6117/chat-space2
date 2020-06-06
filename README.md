@@ -26,12 +26,12 @@ Things you may want to cover:
 
 ## messagesテーブル
 
-|Column|Type|Options|
-|------|----|-------|
-|body|text||
-|image|string||
-|group_id|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
+| Column   | Type    | Options                        |
+| -------- | ------- | ------------------------------ |
+| body     | text    |                                |
+| image    | string  |                                |
+| group_id | integer | null: false, foreign_key: true |
+| user_id  | integer | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :group
@@ -39,10 +39,10 @@ Things you may want to cover:
   
 ## usersテーブル
 
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null: false|
-|mail|string|null: false|
+| Column | Type   | Options     |
+| ------ | ------ | ----------- |
+| name   | string | null: false |
+| mail   | string | null: false |
 
 ### Association
 - has_many :messages
@@ -52,9 +52,9 @@ Things you may want to cover:
 
 ## groupsテーブル
 
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null: false|
+| Column | Type   | Options     |
+| ------ | ------ | ----------- |
+| name   | string | null: false |
 
 ### Association
 - has_many :massages
@@ -64,10 +64,10 @@ Things you may want to cover:
 
 ## groups_usersテーブル
 
-|Column|Type|Options|
-|------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+| Column   | Type    | Options                        |
+| -------- | ------- | ------------------------------ |
+| user_id  | integer | null: false, foreign_key: true |
+| group_id | integer | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :group
