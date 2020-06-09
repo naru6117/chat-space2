@@ -39,10 +39,11 @@ Things you may want to cover:
   
 ## usersテーブル
 
-| Column | Type   | Options     |
-| ------ | ------ | ----------- |
-| name   | string | null: false |
-| mail   | string | null: false |
+| Column   | Type   | Options     |
+| -------- | ------ | ----------- |
+| name     | string | null: false |
+| mail     | string | null: false |
+| password | string | null: false |
 
 ### Association
 - has_many :messages
