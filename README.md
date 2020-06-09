@@ -39,11 +39,11 @@ Things you may want to cover:
   
 ## usersテーブル
 
-| Column   | Type   | Options                  |
-| -------- | ------ | ------------------------ |
-| name     | string | null: false,unique: true |
-| mail     | string | null: false              |
-| password | string | null: false              |
+| Column   | Type   | Options                   |
+| -------- | ------ | ------------------------- |
+| name     | string | null: false               |
+| mail     | string | null: false, unique: true |
+| password | string | null: false               |
 
 ### Association
 - has_many :messages
@@ -53,9 +53,9 @@ Things you may want to cover:
 
 ## groupsテーブル
 
-| Column | Type   | Options     |
-| ------ | ------ | ----------- |
-| name   | string | null: false |
+| Column | Type   | Options                  |
+| ------ | ------ | ------------------------ |
+| name   | string | null: false,unique: true |
 
 ### Association
 - has_many :massages
