@@ -1,0 +1,22 @@
+.chat-main {
+    float: right;
+
+    .chat-main__group-info {
+        background-color: #ffffff;
+        width: calc(100vw - 300px);
+        height: 100px;
+    }
+
+    .chat-main__message-list {
+        background-color: #fafafa;
+        width: calc(100vw - 300px);
+        height: calc(100vh - 190px);
+    
+    }
+
+    .chat-main__message-form {
+        background-color: #d2d2d2;
+        width: calc(100vw - 300px);
+        height: 90px;
+    }
+}
