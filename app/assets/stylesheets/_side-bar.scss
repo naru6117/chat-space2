@@ -8,6 +8,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-style: bold;
 
         .top-items {
             width: 260px;
@@ -20,6 +21,7 @@
                 width: 200px;
                 height: 20px;
                 color:#ffffff;
+                font-style: bold;
             }
 
             .top-items__icons {
@@ -27,6 +29,7 @@
                 float: right;
                 height: 20px;
                 color: #ffffff;
+                font-style: bold;
 
             }
     
@@ -36,5 +39,25 @@
         background-color: #2f3e51 ;
         width: 300px;
         height: calc(100vh - 100px);
+        display: block;
+        padding: 20px;
+       
+            .group-list__group-name {
+                width: 260px;
+                height: auto;
+                font-size: 15px;
+                color: #ffffff;
+                padding: 0px, 0px, 5px 0px;
+                font-style: bold;
+            }
+
+            .group-list__new-message {
+                width: 260px;
+                height: auto;
+                font-size: 11px;
+                color: #ffffff;
+                padding: 0px, 0px, 40px 0px;
+                font-style: bold;
+            }
     }
 }
