@@ -6,6 +6,37 @@
         width: calc(100vw - 300px);
         height: 100px;
         border-bottom: #eeeeee;
+        display: block;
+
+        .group-info__info{
+            display: block;
+            padding: 35px 0px 0px 40px;
+            width: auto;
+            height: auto;
+        
+            .group-info__group-name {
+                color: #333333;
+                font-size: 20px;
+                margin: 35px, 0px;
+                width: auto;
+                height: auto;
+            }
+
+            .group-info__member {
+                color: #999999;
+                font-size: 12px;
+                width: auto;
+                height: auto;
+
+            }
+
+        }
+
+        .group-info__edit {
+
+        }
+
+
     }
 
     .chat-main__message-list {

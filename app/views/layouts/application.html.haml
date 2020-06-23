@@ -7,6 +7,5 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    .side-bar
-    = render partial: 'layouts/side-bar'
-    = render partial: 'layouts/chat-main'
+    = render partial: 'messages/side-bar'
+    = render partial: 'messages/chat-main'
