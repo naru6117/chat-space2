@@ -90,5 +90,19 @@
         background-color: #d2d2d2;
         width: calc(100vw - 300px);
         height: 90px;
+        padding: 20px 40px;
+
+
+        .message-form__text-form {
+            width: auto;
+            height: 50px;
+            background-color: #ffffff;
+            margin-right: 15px;
+            font-size: 16px;
+            color: #999999;
+            padding-left: 10px;
+            line-height: 50px;
+
+        }
     }
 }
