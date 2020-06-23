@@ -13,6 +13,7 @@
             padding: 35px 0px 0px 40px;
             width: auto;
             height: auto;
+            float: left;
         
             .group-info__group-name {
                 color: #333333;
@@ -32,7 +33,15 @@
         }
 
         .group-info__edit {
-
+            color: #38aef0;
+            font-size: 16px;
+            width: 72px;
+            height: 40px;
+            padding: 0px 20px;
+            border: solid 1px #38aef0;
+            margin: 28px 40px ;
+            float: right;
+            line-height: 40px;
         }
 
 
