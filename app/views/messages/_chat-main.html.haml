@@ -12,4 +12,7 @@
             %p.message-list__date 2020/06/23
             %p.message-list__message おはよう！
     .chat-main__message-form
-        %form.message-form__text-form type a text
+        .message-form__text-form 
+            %form.text-form__text type a text
+            .text-form__icon
+                = icon('far', 'image',class: "icon__image")
