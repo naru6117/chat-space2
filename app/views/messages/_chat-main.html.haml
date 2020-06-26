@@ -4,7 +4,7 @@
         .group-info__info
             %p.group-info__group-name test
             %p.group-info__member Member:
-        %p.group-info__edit Edit
+        .group-info__edit Edit
 
     .chat-main__message-list
         .message-list__box
@@ -20,8 +20,14 @@
             %p.message-list__date 2020/06/23
             %p.message-list__message おはよう！
 
-    .chat-main__message-form
-        .message-form__text-form 
-            %form.text-form__text type a text
-            .text-form__icon
-                = icon('far', 'image',class: "icon__image")
+    .Footer
+        %form.Form
+            %input.authenticity_token{"type": "hidden"}
+            .Form__contents
+                %input.Form__inputContent{"placeholder": "type a message", "type": "text"}
+                %label.Form__inputImage{"type": "file"}
+                    = icon('far', 'image',class: "Form__icon")
+                    %input.Hidden{"type": "hidden"}
+            %input.Form__submit{"value": "Send" }
+    
+
