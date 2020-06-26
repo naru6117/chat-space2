@@ -8,7 +8,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-style: bold;
 
         .top-items {
             width: 260px;
@@ -21,7 +20,6 @@
                 width: 200px;
                 height: 20px;
                 color:#ffffff;
-                font-style: bold;
             }
 
             .top-items__icons {
@@ -29,10 +27,9 @@
                 float: right;
                 height: 20px;
                 color: #ffffff;
-                font-style: bold;
-
+                text-align: right;
             }
-    
+
     }
 
     .side-bar__group-list {
