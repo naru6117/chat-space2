@@ -25,9 +25,9 @@
             %input.authenticity_token{"type": "hidden"}
             .Form__contents
                 %input.Form__inputContent{"placeholder": "type a message", "type": "text"}
-                %label.Form__inputImage{"type": "file"}
+                %label.Form__inputImage
                     = icon('far', 'image',class: "Form__icon")
-                    %input.Hidden{"type": "hidden"}
-            %input.Form__submit{"value": "Send", "type": "submit" }
+                    %input.Hidden{"type": "hidden", "type": "file"}
+            %input.Form__submit{"value": "Send", "type": "submit"}
     
 
