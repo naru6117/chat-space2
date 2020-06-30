@@ -2,7 +2,7 @@
     float: right;
     width: calc(100vw - 300px);
 
-    .chat-main__group-info {
+    .&__group-info {
         background-color: #ffffff;
         width: calc(100vw - 300px);
         height: 100px;
@@ -10,21 +10,21 @@
         display: block;
         position: fixed;
 
-        .group-info__info{
+        .&__info{
             display: block;
             padding: 35px 0px 0px 40px;
             width: auto;
             height: 100px;
             float: left;
         
-            .group-info__group-name {
+            .&__group-name {
                 color: #333333;
                 font-size: 20px;
                 width: auto;
                 height: auto;
             }
 
-            .group-info__member {
+            .&__member {
                 color: #999999;
                 font-size: 12px;
                 width: auto;
@@ -34,7 +34,7 @@
 
         }
 
-        .group-info__edit {
+        .&__edit {
             color: #38aef0;
             font-size: 16px;
             width: 72px;
