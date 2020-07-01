@@ -1,0 +1,33 @@
+.chat-main
+
+    .chat-main__group-info
+        .chat-main__group-info__info
+            %p.chat-main__group-info__info-groupname test
+            %p.chat-main__group-info__info-member Member:
+        .chat-main__group-info-edit Edit
+
+    .chat-main__message-list
+        .message-list__box
+            %p.message-list__Sender masa
+            %p.message-list__date 2020/06/23
+            %p.message-list__message おはよう！
+
+            %p.message-list__Sender masa
+            %p.message-list__date 2020/06/23
+            %p.message-list__message おはよう！
+
+            %p.message-list__Sender masa
+            %p.message-list__date 2020/06/23
+            %p.message-list__message おはよう！
+
+    .Footer
+        %form.Form
+            %input.authenticity_token{"type": "hidden"}
+            .Form__contents
+                %input.Form__inputContent{"placeholder": "type a message", "type": "text"}
+                %label.Form__inputImage
+                    = icon('far', 'image',class: "Form__icon")
+                    %input.Hidden{"type": "hidden", "type": "file"}
+            %input.Form__submit{"value": "Send", "type": "submit"}
+    
+
