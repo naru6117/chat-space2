@@ -17,14 +17,14 @@
             height: 100px;
             float: left;
         
-            &__group-name {
+            &-groupname {
                 color: #333333;
                 font-size: 20px;
                 width: auto;
                 height: auto;
             }
 
-            &__member {
+            &-member {
                 color: #999999;
                 font-size: 12px;
                 width: auto;
@@ -34,7 +34,7 @@
 
         }
 
-        &__edit {
+        &-edit {
             color: #38aef0;
             font-size: 16px;
             width: 72px;
@@ -49,7 +49,7 @@
 
     }
 
-    .chat-main__message-list {
+    &__message-list {
         background-color: #fafafa;
         width: calc(100vw - 300px);
         height: calc(100vh - 190px);
