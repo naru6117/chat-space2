@@ -47,8 +47,10 @@
         height: calc(100vh - 100px);
         display: block;
         padding: 20px;
-       
-            .group-list__group-name {
+
+        .side-bar__group {
+
+            .side-bar__group-name {
                 width: 260px;
                 height: auto;
                 font-size: 15px;
@@ -56,12 +58,13 @@
                 padding: 0px 0px 5px 0px;
             }
 
-            .group-list__new-message {
+            .side-bar__new-message {
                 width: 260px;
                 height: auto;
                 font-size: 11px;
                 color: #ffffff;
                 padding: 0px 0px 40px 0px;
             }
+        }
     }
 }
