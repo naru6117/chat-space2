@@ -21,13 +21,12 @@
             %p.message-list__message おはよう！
 
     .Footer
-        %form.Form
-            %input.authenticity_token{"type": "hidden"}
+        = form_for  [@group, @message], html: {class: "Form"}, local: true do |f|
             .Form__contents
-                %input.Form__inputContent{"placeholder": "type a message", "type": "text"}
-                %label.Form__inputImage
-                    = icon('far', 'image',class: "Form__icon")
-                    %input.Hidden{"type": "hidden", "type": "file"}
-            %input.Form__submit{"value": "Send", "type": "submit"}
-    
+                = f.text_field :content, class: 'Form__inputContent', placeholder: 'type a message'
+                = f.label :image, class: 'Form__inputImage' do
+                    = icon('far', 'image', class: 'Form__icon')
+                    = f.file_field :image, class: 'Hidden'
+            = f.submit 'Send', class: 'Form__submit'
+
 
