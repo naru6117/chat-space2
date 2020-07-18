@@ -14,17 +14,19 @@
 
     .chat-main__message-list
         .message-list__box
-            %p.message-list__Sender masa
-            %p.message-list__date 2020/06/23
-            %p.message-list__message おはよう！
+            = render @messages
+        -# .message-list__box
+        -#     %p.message-list__Sender masa
+        -#     %p.message-list__date 2020/06/23
+        -#     %p.message-list__message おはよう！
 
-            %p.message-list__Sender masa
-            %p.message-list__date 2020/06/23
-            %p.message-list__message おはよう！
+        -#     %p.message-list__Sender masa
+        -#     %p.message-list__date 2020/06/23
+        -#     %p.message-list__message おはよう！
 
-            %p.message-list__Sender masa
-            %p.message-list__date 2020/06/23
-            %p.message-list__message おはよう！
+        -#     %p.message-list__Sender masa
+        -#     %p.message-list__date 2020/06/23
+        -#     %p.message-list__message おはよう！
 
     .Footer
         = form_for  [@group, @message], html: {class: "Form"}, local: true do |f|
