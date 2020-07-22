@@ -58,7 +58,7 @@ $(function (){
 
         var id = $(this).attr("data-user-id") 
         var username = $(this).attr("data-user-name") 
-        console.log(username)
+        // console.log(username)
         appendUser(id,username)
 
 

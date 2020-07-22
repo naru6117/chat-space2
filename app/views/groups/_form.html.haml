@@ -26,8 +26,8 @@
       = f.label :name, value: "チャットメンバー", class: "SettingGroupForm__label"
     .SettingGroupForm__rightField
       .ChatMembers
-        - group.users.each do |user|
-          = user.name
+        .ChatMember
+          = current_user.name
   .SettingGroupForm__field
     .SettingGroupForm__leftField
     .SettingGroupForm__rightField
