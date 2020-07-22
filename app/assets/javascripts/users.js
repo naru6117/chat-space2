@@ -17,7 +17,18 @@ $(function (){
                     `;
         $("#UserSearchResult").append(html);
       }
-    
+
+      function  appendUser(id,username){
+        let html = `
+                    <div class="ChatMember">
+                      <p class="ChatMember__name">${username}</p>
+                      <input name="group[user_ids][]" type="hidden" value="${id}" />
+                      <div class="ChatMember__remove ChatMember__button">削除</div>
+                    </div>
+                    `;
+      $(".ChatMembers").append(html)
+    }
+      
     $("#UserSearch__field").on("keyup", function(){
       let input = $("#UserSearch__field").val();
       $.ajax({
@@ -43,9 +54,18 @@ $(function (){
       });
     });
 
-    $("#UserSearchResult").on('click',".ChatMember__button",function(){
-        console.log('a')
+    $("#UserSearchResult").on('click',".ChatMember__button",function(e){
+
+        var id = $(this).attr("data-user-id") 
+        var username = $(this).attr("data-user-name") 
+        console.log(username)
+        appendUser(id,username)
+
+
+      $(this).parent().remove()
+
     });
+
   });
 
  
