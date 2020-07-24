@@ -9,25 +9,13 @@
                 - group.users.each do |user|
                     = user.name
         .chat-main__group-info-edit
-            = link_to 'Edit', edit_group_path(group.id)
+            = link_to 'Edit', edit_group_path(group.id),data: {"turbolinks" => false}
 
 
     .chat-main__message-list
         .message-list__box
             = render @messages
-        -# .message-list__box
-        -#     %p.message-list__Sender masa
-        -#     %p.message-list__date 2020/06/23
-        -#     %p.message-list__message おはよう！
-
-        -#     %p.message-list__Sender masa
-        -#     %p.message-list__date 2020/06/23
-        -#     %p.message-list__message おはよう！
-
-        -#     %p.message-list__Sender masa
-        -#     %p.message-list__date 2020/06/23
-        -#     %p.message-list__message おはよう！
-
+            
     .Footer
         = form_for  [@group, @message], html: {class: "Form"}, local: true do |f|
             .Form__contents
