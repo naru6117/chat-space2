@@ -9,7 +9,7 @@
 
             %ul.top-items__icons
                 %li.icons
-                    = link_to new_group_path do
+                    = link_to new_group_path,data: {"turbolinks" => false} do
                         = icon('far', 'edit',class: "icon")
                 %li.icons 
                     = link_to edit_user_path(current_user)do
