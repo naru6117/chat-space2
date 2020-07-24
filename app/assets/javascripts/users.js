@@ -55,16 +55,17 @@ $(function (){
     });
 
     $("#UserSearchResult").on('click',".ChatMember__button",function(e){
-
         var id = $(this).attr("data-user-id") 
         var username = $(this).attr("data-user-name") 
-        // console.log(username)
         appendUser(id,username)
-
-
       $(this).parent().remove()
-
     });
+
+    $(".ChatMembers").on('click',".ChatMember__button",function(e){
+    $(this).parent().remove()
+  });
+
+
 
   });
 
