@@ -17,8 +17,8 @@
     
     .side-bar__group-list
         - current_user.groups.each do |group|
-            .side-bar__group
-                = link_to group_messages_path(group) do
+            .side-bar__group{class:('active' if (defined? current_group) && current_group.id == group.id)}
+                = link_to group_messages_path(group), class: "MESSAGElink" do
                     %p.side-bar__group-name
                         = group.name
                     %p.side-bar__new-message

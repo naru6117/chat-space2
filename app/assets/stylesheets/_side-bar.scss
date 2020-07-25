@@ -2,12 +2,13 @@
     float: left;
 
     .side-bar__master-name {
-        background-color: #253141 ;
+        background-color: #242423 ;
         width: 300px;
         height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-bottom: solid 1px  #cfdbd5;
 
         .top-items {
             width: 260px;
@@ -42,28 +43,48 @@
     }
 
     .side-bar__group-list {
-        background-color: #2f3e51 ;
+        background-color: #333533 ;
         width: 300px;
         height: calc(100vh - 100px);
         display: block;
         padding: 20px;
 
         .side-bar__group {
-
-            .side-bar__group-name {
-                width: 260px;
-                height: auto;
-                font-size: 15px;
+            &:hover {
                 color: #ffffff;
-                padding: 0px 0px 5px 0px;
+                opacity: 0.7 ;
+                // background-image: -webkit-gradient(linear, left top, right top, from(#ecb211), to(#f5d889));
+                // background-image: -webkit-linear-gradient(left, #ecb211 0%, #f5d889 100%);
+                // background-image: linear-gradient(to right, #ecb211 0%, #f5d889 100%);
+                a {
+                    //color: #333533;
+                }
             }
 
-            .side-bar__new-message {
-                width: 260px;
-                height: auto;
-                font-size: 11px;
+            &.active {
+                font-weight: bold;;
+                opacity: 0.7 ;
+            }
+
+            .MESSAGElink {
+                text-decoration:none;
                 color: #ffffff;
-                padding: 0px 0px 40px 0px;
+
+                .side-bar__group-name {
+                    
+                    width: 260px;
+                    height: auto;
+                    font-size: 15px;
+                    padding: 0px 0px 5px 0px;
+                }
+
+                .side-bar__new-message {
+                    width: 260px;
+                    height: auto;
+                    font-size: 11px;
+                    padding: 0px 0px 40px 0px;
+                }
+
             }
         }
     }
